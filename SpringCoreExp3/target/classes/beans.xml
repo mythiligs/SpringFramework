@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="o1" class="com.test.Address">
+<property name="id" value="101"></property>
+<property name="name" value="hello"></property>
+</bean>
+
+<bean id="o2" class="com.test.Address">
+<property name="id" value="788"></property>
+<property name="name" value="heeee"></property>
+</bean>
+
+<bean id="o3" class="com.test.Address">
+<constructor-arg name="id" value="788"></constructor-arg>
+<constructor-arg name="name" value="heeee"></constructor-arg>
+</bean>
+
+<bean id="m1" class="com.test.Meeting">
+<property name="id" value="103"></property>
+<property name="name" value="mythili"></property>
+<property name="number" value="112233"></property>
+<property name="skills">
+			<list>
+				<value>java</value>
+				<value>spring</value>
+				<value>fsd</value>
+			</list>
+
+		</property>
+<property name="aobj" ref="o2"></property>
+</bean>
+
+<bean id="r1" class="com.test.Records">
+<constructor-arg name="id" value="105"></constructor-arg>
+<constructor-arg name="name" value="gopi"></constructor-arg>
+<constructor-arg name="no" value="555"></constructor-arg>
+<constructor-arg name="sk">
+<list>
+<value>java1</value>
+<value>spring1</value>
+<value>fsd1</value>
+</list>
+</constructor-arg>
+<constructor-arg name="ob" ref="o2"></constructor-arg>
+</bean>
+</beans>
