@@ -24,11 +24,11 @@ public class StoreData {
 		//5.execute obj
 		session.save(b);//persistent state
 		//t.commit();
-		Book bobj=session.get(Book.class,1);
+		/*Book bobj=session.get(Book.class,1);
 		System.out.println(bobj.getId()+" "+bobj.getB_name()+" "+bobj.getB_author());
 		
-		bobj.setB_name("servlet");
-		session.save(bobj);
+		bobj.setB_name("servlet");*/
+		//session.save(bobj);
 		t.commit();
 		
 		
