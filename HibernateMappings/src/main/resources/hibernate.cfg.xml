@@ -14,8 +14,8 @@
 		<!-- <property name="format_sql">true</property> -->
 		<property name="hbm2ddl.auto">create</property>
 		<!-- <mapping resource="com/test/Book.hbm.xml" /> -->
-		<!-- <mapping class="com.test.Address"/> -->
-		<!-- <mapping class="com.test.Employee"/> -->
+<!-- 		 <mapping class="com.test.Address"/> -->
+<!-- 		 <mapping class="com.test.Employee"/>  -->
 		<mapping class="com.test.Skills" />
 		<mapping class="com.test.Student" />
 

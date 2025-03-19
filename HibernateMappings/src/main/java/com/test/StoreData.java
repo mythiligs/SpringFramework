@@ -20,28 +20,28 @@ public class StoreData {
 		//4.transaction obj
 		Transaction t=session.beginTransaction();
 		//transient
-		/*
-		Address adr1=new Address();
-		adr1.setCity("chennai");
+		
+		/*Address adr1=new Address();
+		adr1.setCity("blr");
 		adr1.setState("TN");
-		adr1.setCountry("IN");
+		adr1.setCountry("India");
 		
 		Employee emp1=new Employee();
-		emp1.setEmp_name("dhoni");
-		emp1.setEmp_email("jsd@gmail.com");
+		emp1.setEmp_name("myth");
+		emp1.setEmp_email("myth@gmail.com");
 		emp1.setAdress(adr1);*/
 		//5.execute obj
 		
 		Skills skl1=new Skills();
-		skl1.setS_name("spring");
+		skl1.setS_name("JDBC");
 		Skills skl2=new Skills();
-		skl1.setS_name("Hibernate");
+		skl1.setS_name("JAVA");
 		List<Skills>listSkl=new ArrayList<>();
 		listSkl.add(skl1);
 		listSkl.add(skl2);
 		Student std=new Student();
 		std.setStd_name("mythili");
-		std.setSkills(listSkl);
+		
 		session.save(std);//persistent state
 		t.commit();
 		System.out.println("done");
