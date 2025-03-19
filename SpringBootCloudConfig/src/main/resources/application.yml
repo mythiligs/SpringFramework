@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SpringBootCloudConfig
+server:
+  port: 3333
+  
+
+
+
