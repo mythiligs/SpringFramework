@@ -20,7 +20,7 @@ public class Employee {
 	private String emp_email;
 	@OneToOne(targetEntity=Address.class,cascade=CascadeType.ALL)
 	private Address adress;
-	
+	//jffdjkdg
 	public Address getAdress() {
 		return adress;
 	}
